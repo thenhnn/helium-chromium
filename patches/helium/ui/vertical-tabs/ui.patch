@@ -94,7 +94,8 @@
          delegate_->GetBoundsForTabStripRegionInBrowserView());
 +
      toolbar_bounds.set_x(available_bounds.x());
-     toolbar_bounds.set_width(toolbar_bounds.width() -
+-    toolbar_bounds.set_width(toolbar_bounds.width() -
++    toolbar_bounds.set_width(available_bounds.width() -
                               BrowserView::kVerticalTabStripWidth);
 +    int height = toolbar_visible ? toolbar_bounds.height() : 0;
      toolbar_->SetBounds(toolbar_bounds.x(), toolbar_bounds.y(),
